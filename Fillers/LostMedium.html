@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Lost.css">
+    <title>LOST</title>
+</head>
+
+<body>
+    <center>
+        <h1>TIMES UP</h1>
+        <div><img src="/Fillers/gameOver.png" width="360rem" alt="GAME OVER!"></div>
+        <h1>YOUR SCORE: <span id="result">00</span> </h1>
+        <button onclick="click0()">RETRY LEVEL</button>
+        <div><img src="/Fillers/sadMickey.png" width="250rem" alt=":("></div>
+    </center>
+
+    <audio id="clickEffect">
+        <source src="/Fillers/da_click.mp3">
+    </audio>
+    <audio autoplay>
+        <source src="/Fillers/lostGame.mp3">
+    </audio>
+
+    <script>
+        document.getElementById("result").innerHTML = sessionStorage.getItem("scoreDisplay")
+
+        function click0() {
+            document.getElementById("clickEffect").play();
+            setTimeout(() => {
+                window.location.replace("http://127.0.0.1:5500/medium/medium.html");
+            }, 200);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Playfair+Display:wght@400;500;800&family=Rowdies:wght@300&display=swap');
+
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    font-family: "Montserrat", "Avenir";
+    font-family: 'Carter One', cursive;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rowdies', cursive;
+}
+
+/* POPUP Window design */
+#popupWindow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .6);
+}
+
+#popup {
+    width: 38%;
+    height: 25%;
+    background: #FFFFFF;
+    border: 5px solid #000;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    box-shadow: #64686e 0px 0px 3px 3px;
+    -moz-box-shadow: #64686e 0px 0px 3px 3px;
+    -webkit-box-shadow: #64686e 0px 0px 3px 3px;
+    position: relative;
+    padding: 1%;
+    top: 10%;
+    left: 31%;
+}
+
+#intro {
+    display: flex;
+}
+
+#timerBtn {
+    background-color: orange;
+    font-size: 1.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    padding: 3px 12px;
+    border: 0.1rem solid black;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+.square {
+    width: 60%;
+    margin: 10%;
+    border-radius: 15%;
+    padding-bottom: 50%;
+    height: 20px;
+    transition: background 0.6s;
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
+    cursor: pointer;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 400%;
+    padding-left: 14%;
+    padding-right: 10%;
+    margin: 3%;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+    text-align: center;
+    line-height: 1.1;
+    font-weight: normal;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+#colorDisplay {
+    font-size: 200%;
+}
+
+#message {
+    display: inline-block;
+    width: 20%;
+    color: white;
+}
+
+#stripe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 24px;
+    text-align: center;
+    color: white;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    width: 2%;
+    background-color: #000;
+    border: 0;
+    cursor: pointer;
+}
+
+button span {
+    display: none;
+    visibility: hidden;
+    background-color: #000;
+    color: whitesmoke;
+    white-space: nowrap;
+    padding-top: 2.5px;
+    padding-left: 5px;
+}
+
+#hint:hover span,
+#restart:hover span {
+    display: inline-block;
+    visibility: initial;
+    color: whitesmoke;
+}
+
+
+/* The Hint (background) */
+.hintPop {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 25%;
+}
+
+/* Hint Content/Box */
+.hint-content {
+    margin: 42.5% 25%;
+    padding: 0px;
+    padding-top: 25px;
+}

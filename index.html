@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy</title>
+    <link rel="stylesheet" href="easy\easy.css">
+</head>
+
+<body>
+
+    <!-- POP-UP Window for starting the game -->
+    <div id="popupWindow">
+        <div id="popup">
+            <center>
+                <h2>GUESS THE COLOR!</h2>
+                <div id="intro">
+                    <img src="/Fillers/rbg_Picsart.png" width="200rem" height="200rem" alt="rbg.jpg">
+                    <article>
+                        <h4>INTRODUCTION</h4>
+                        <P>The RGB color model is an additive color model in which red, green, and blue light are added
+                            together in various ways to reproduce a broad array of colors. The name of the model comes
+                            from the initials of the three additive primary colors, red, green, and blue.
+                            The red, green and blue use 8 bits each, which have integer values from 0 to 255. This makes
+                            256*256*256=16777216 possible colors.
+                        </P>
+                    </article>
+                    <img src="/Fillers/rbg_Picsart.png" width="200rem" height="200rem" alt="rbg.jpg">
+                </div>
+                <H4>HOW TO PLAY?</H4>
+                <P>A combination of RGB code will be provided and you need to
+                    select the correct color displayed below. A correct guess will earn you 20 points,
+                    while a wrong one gives you -5. Score a minimun of 100 within
+                    the given time to move to the next level. Hope you enjoy the game ;)
+                    <br> *For hints click <img src="/Fillers/questionMark.png" width="1.3%" alt="?">
+                </P>
+                <h2>Press START when you are ready</h2>
+                <input type="submit" name="submit" id="timerBtn" value="START" onClick="popUp()">
+            </center>
+        </div>
+    </div>
+
+
+    <!-- Heading Section -->
+    <h1 id="head">
+        <div id="score">
+            <img src="/Fillers/score.png" width="115rem" height="45rem" alt="Score"><br>
+            <!-- <div>SCORE</div> -->
+            <span id="scoreDisplay">0</span>
+        </div>
+        <div>
+            Guess the color!<br>
+            <span id="colorDisplay">RGB</span><br>
+        </div>
+        <div>
+            <img src="/Fillers/timerLogo.png" width="65rem" alt="Timer"><br>
+            <span id="timer">25</span>
+        </div>
+    </h1>
+
+
+    <!-- message display -->
+    <div id="stripe">
+        <button id="restart"><img src="/Fillers/reload_Picsart.png" width="145%" alt="Restart Game"
+                onClick="window.location.reload();"><span>Restart The Game</span>
+        </button>
+
+        <div id="message"></div>
+
+        <button id="hint"><img src="/Fillers/questionMark.png" width="145%" alt="?">
+            <span>Need Hint?!</span></button>
+    </div>
+
+    <!-- color display area -->
+    <div id="container">
+        <div onclick="playAudio()" class="square"></div>
+        <div onclick="playAudio()" class="square"></div>
+        <div onclick="playAudio()" class="square"></div>
+    </div>
+
+    <!-- Hint POP-UP -->
+    <div id="myModal" class="hintPop">
+        <div class="hint-content">
+            <img src="/Fillers/rgb.png" width="250rem" alt="Sorry, No Hints! xD">
+        </div>
+    </div>
+
+    <audio id="clickEffect">
+        <source src="/Fillers/da_click.mp3">
+    </audio>
+
+    <audio id="rightGuess">
+        <source src="/Fillers/rightClick.mp3">
+    </audio>
+
+    <script src="easy\easy.js"></script>
+</body>
+
+</html>

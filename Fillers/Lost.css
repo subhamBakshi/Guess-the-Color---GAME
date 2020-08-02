@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Playfair+Display:wght@400;500;800&family=Yellowtail&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Playball', cursive;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Yellowtail', cursive;
+    padding: 1%;
+}
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1.5%;
+}
+
+button {
+    background-color: orange;
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    padding: 8px 12px;
+    border: 0.1rem solid black;
+    border-radius: 15%;
+    text-decoration: none;
+    cursor: pointer;
+}

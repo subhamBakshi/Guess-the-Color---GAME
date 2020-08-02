@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Win.css">
+    <title>Level Completed</title>
+</head>
+
+<body>
+    <center>
+        <div><img src="/Fillers/congratulations.png" alt="CONGRATULATIONS!" width="500px"></div>
+        <h2>YOU HAVE COMPLETED THE LEVEL <BR> IN <span id="timeRem"> 00</span> SECONDS</h2>
+        <br>
+        <div id="message">
+            <button onClick="click1()">RETRY PREVIOUS LEVEL</button>
+            <button onClick="click2()"> GO TO NEXT LEVEL</button>
+        </div>
+        <div><img src="/Fillers/cheerleader-png.png" alt="cheers!" width="250px"></div>
+    </center>
+
+    <audio id="clickEffect">
+        <source src="/Fillers/da_click.mp3">
+    </audio>
+    <audio autoplay>
+        <source src="/Fillers/winner.mp3">
+    </audio>
+
+    <script>
+        document.getElementById("timeRem").innerHTML = sessionStorage.getItem("timer");
+
+        function click1() {
+            document.getElementById("clickEffect").play();
+            setTimeout(() => {
+                window.location.replace("http://127.0.0.1:5500/medium/medium.html");
+            }, 200);
+        }
+
+        function click2() {
+            document.getElementById("clickEffect").play();
+            setTimeout(() => {
+                window.location.replace("http://127.0.0.1:5500/hard/hard.html");
+            }, 200);
+        }
+    </script>
+</body>
+
+
+</html>

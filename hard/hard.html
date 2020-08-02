@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard</title>
+    <link rel="stylesheet" href="hard.css">
+</head>
+
+<body>
+
+    <!-- POP-UP Window for starting the game -->
+    <div id="popupWindow">
+        <div id="popup">
+            <center>
+                <p>(Score as much as you can within 60 seconds)</p>
+                <h2>Press START when you are ready</h2>
+                <input type="submit" name="submit" id="timerBtn" value="START" onClick="PopUp()">
+            </center>
+        </div>
+    </div>
+
+    <!-- Heading Section -->
+    <h1 id="head">
+        <div id="score">
+            <img src="/Fillers/score.png" width="115rem" height="45rem" alt="Score"><br>
+            <!-- <div>SCORE</div> -->
+            <span id="scoreDisplay">0</span>
+        </div>
+        <div>
+            Guess the color!<br>
+            <span id="colorDisplay">RGB</span><br>
+        </div>
+        <div>
+            <img src="/Fillers/timerLogo.png" width="65rem" alt="Timer"><br>
+            <span id="timer">60</span>
+        </div>
+    </h1>
+
+
+    <!-- message display -->
+    <div id="stripe">
+        <button id="restart"><img src="/Fillers/reload_Picsart.png" width="145%" alt="@"
+                onClick='window.location.href = "http://127.0.0.1:5500/index.html"'><span>Restart The Game</span>
+        </button>
+
+        <div id="message"></div>
+
+        <button id="hint"><img src="/Fillers/questionMark.png" width="145%" alt="?">
+            <span>Need Hint?!</span></button>
+    </div>
+
+
+    <!-- color display area -->
+    <div id="container">
+        <div onclick="playAudio()" class="square"></div>
+        <div onclick="playAudio()" class="square"></div>
+        <div onclick="playAudio()" class="square"></div>
+        <div onclick="playAudio()" class="square"></div>
+        <div onclick="playAudio()" class="square"></div>
+        <div onclick="playAudio()" class="square"></div>
+        <div onclick="playAudio()" class="square"></div>
+        <div onclick="playAudio()" class="square"></div>
+        <div onclick="playAudio()" class="square"></div>
+        <div onclick="playAudio()" class="square"></div>
+    </div>
+
+    <!-- Hint POP-UP -->
+    <div id="myModal" class="hintPop">
+        <div class="hint-content">
+            <img src="/Fillers/rgb.png" width="250rem" alt="Sorry, No Hints! xD">
+        </div>
+    </div>
+
+    <audio id="clickEffect">
+        <source src="/Fillers/da_click.mp3">
+    </audio>
+    <audio id="rightGuess">
+        <source src="/Fillers/rightClick.mp3">
+    </audio>
+
+    <script src="hard.js"></script>
+</body>
+
+</html>
