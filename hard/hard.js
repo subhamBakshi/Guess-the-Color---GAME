@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setInterval(function () {
             if (timeLeft <= 0) {
                 clearInterval(timeLeft = 0)
-                window.location.href = " http://127.0.0.1:5500/Fillers/LostHard.html"
+                window.location.href = "/Fillers/LostHard.html"
 
             }
             timeLeftDisplay.innerHTML = timeLeft
