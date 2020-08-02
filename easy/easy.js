@@ -48,7 +48,7 @@ for (let i = 0; i < squares.length; i++) { //add initial colors to squares
             scoreDisplay.textContent = score;
             newColors();
             if (score >= 100) {
-                window.location.href = "/Fillers/Win.html";
+                window.location.href = "Fillers/Win.html";
             }
         } else {
             this.style.backgroundColor = "whitesmoke"; //wrong one's color fades out into the bg
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setInterval(function () {
             if (timeLeft <= 0) {
                 clearInterval(timeLeft = 0)
-                window.location.href = "/Fillers/LostEasy.html";
+                window.location.href = "Fillers/LostEasy.html";
             }
             timeLeftDisplay.innerHTML = timeLeft
             timeLeft -= 1;
