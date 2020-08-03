@@ -45,7 +45,7 @@ for (let i = 0; i < squares.length; i++) { //...(1)[add initial colors to square
             scoreDisplay.textContent = score;
             newColors();
             if (score >= 100) {
-                window.location.href = "/Fillers/Win2.html"
+                window.location.href = "Fillers/Win2.html"
             }
         } else {
             this.style.backgroundColor = "whitesmoke";
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setInterval(function () {
             if (timeLeft <= 0) {
                 clearInterval(timeLeft = 0)
-                window.location.href = "/Fillers/LostMedium.html";
+                window.location.href = "Fillers/LostMedium.html";
             }
             timeLeftDisplay.innerHTML = timeLeft
             timeLeft -= 1;
