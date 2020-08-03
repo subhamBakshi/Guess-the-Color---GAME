@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setInterval(function () {
             if (timeLeft <= 0) {
                 clearInterval(timeLeft = 0)
-                window.location.href = "Fillers/LostHard.html"
+                window.location.href = "https://subhambakshi.github.io/Guess-the-Color---Game/Fillers/LostHard.html"
 
             }
             timeLeftDisplay.innerHTML = timeLeft
