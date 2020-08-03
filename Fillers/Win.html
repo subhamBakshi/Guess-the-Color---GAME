@@ -35,7 +35,7 @@
         function click1() {
             document.getElementById("clickEffect").play(); //...(1)
             setTimeout(() => {
-                window.location.replace("index.html"); //...(2)[.href didn't work]
+                window.location.replace("/index.html"); //...(2)[.href didn't work]
             }, 200);
         } //We had to use setTimeout Method as the button didn't work with two functions simultaneously
         //(only in case of input tag, more than 2 functions worked simultaneously)
@@ -43,7 +43,7 @@
         function click2() {
             document.getElementById("clickEffect").play();
             setTimeout(() => {
-                window.location.replace("medium.html");
+                window.location.replace("/medium.html");
             }, 200);
         }
     </script>
