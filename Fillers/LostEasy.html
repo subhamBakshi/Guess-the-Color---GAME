@@ -11,18 +11,18 @@
 <body>
     <center>
         <h1>TIMES UP</h1>
-        <div><img src="/Fillers/gameOver.png" width="360rem" alt="GAME OVER!"></div>
+        <div><img src="Fillers/gameOver.png" width="360rem" alt="GAME OVER!"></div>
         <h1>YOUR SCORE: <span id="result">00</span> </h1>
         <button onClick="click0()">RETRY LEVEL</button>
-        <div><img src="/Fillers/sadMickey.png" width="250rem" alt=":("></div>
+        <div><img src="Fillers/sadMickey.png" width="250rem" alt=":("></div>
     </center>
 
     <audio id="clickEffect">
-        <source src="/Fillers/da_click.mp3">
+        <source src="Fillers/da_click.mp3">
     </audio>
 
     <audio autoplay>
-        <source src="/Fillers/lostGame.mp3">
+        <source src="Fillers/lostGame.mp3">
     </audio>
 
     <script>
@@ -31,7 +31,7 @@
         function click0() {
             document.getElementById("clickEffect").play();
             setTimeout(() => {
-                window.location.replace("/index.html"); //.reload() didn't work
+                window.location.replace("index.html"); //.reload() didn't work
             }, 200);
         }
     </script>
