@@ -85,7 +85,7 @@ function randomColor() {
 document.addEventListener('DOMContentLoaded', () => {
     const timeLeftDisplay = document.querySelector("#timer")
     const startBtn = document.querySelector("#timerBtn")
-    let timeLeft = 24
+    let timeLeft = 29
 
     function countdown() {
         setInterval(function () {
